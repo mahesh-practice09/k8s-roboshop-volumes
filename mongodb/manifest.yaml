@@ -20,10 +20,10 @@ kind: StatefulSet
 metadata:
   name: mongodb
   namespace: roboshop
-labels: 
-  project: roboshop 
-  tier: db
-  component: mongodb
+  labels: 
+    project: roboshop 
+    tier: db
+    component: mongodb
 spec:
   serviceName: "mongodb-headless"  # we should headless service
   replicas: 3
