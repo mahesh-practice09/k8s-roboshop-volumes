@@ -26,7 +26,8 @@ metadata:
     component: mongodb
 spec:
   serviceName: "mongodb-headless"  # we should headless service
-  replicas: 3
+  replicas: 1
+  #replicas: 3
   selector:
     matchLabels:
       project: roboshop 
